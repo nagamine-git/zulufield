@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#000"/>
+  <g stroke="#fff" fill="none" stroke-linecap="square">
+    <path d="M128 64V448M256 64V448M384 64V448M64 128H448M64 256H448M64 384H448" stroke-width="6" opacity="0.45"/>
+    <circle cx="256" cy="256" r="92" stroke-width="18"/>
+    <path d="M256 96V196M256 316V416M96 256H196M316 256H416" stroke-width="18"/>
+  </g>
+  <text x="256" y="486" fill="#fff" font-family="Menlo, Consolas, monospace" font-size="56" font-weight="700" text-anchor="middle" letter-spacing="6">ZULU</text>
+</svg>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>ZULU Field — Support / サポート</title>
+<meta name="description" content="Support for ZULU Field: contact, how to read the MGRS grid and light data, offline maps.">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="top"><img src="icon-192.png" alt=""><a href="./">ZULU FIELD</a></header>
+
+<h1>Support</h1>
+<p class="dim">サポート</p>
+<nav class="lang"><a href="#en">English</a><a href="#ja" lang="ja">日本語</a></nav>
+
+<div class="card">
+<p><b>Contact / お問い合わせ</b><br>
+<a href="mailto:tsuyoshi.nagamine@efg-technologies.com?subject=ZULU%20Field">tsuyoshi.nagamine@efg-technologies.com</a></p>
+<p class="dim">Please include your phone model, OS version, app version and, if possible, the MGRS reference and date you were looking at. English or Japanese.<br>
+<span lang="ja">端末の機種・OS のバージョン・アプリのバージョンと、可能なら見ていた MGRS 座標と日付を添えてください。英語・日本語どちらでも構いません。</span></p>
+</div>
+
+<section id="en">
+<h2>ENGLISH</h2>
+
+<h3>Reading the screen</h3>
+<ul>
+<li><b>Top readout</b> — the MGRS reference of the point under the crosshair, e.g. <span class="mono">54S UE <b>88</b>43 <b>49</b>29</span>. The large digits are the principal digits: the grid lines labelled 88 and 49 on the map edges. Digits are truncated, as on the watch and on a paper map.</li>
+<li><b>POS line</b> — your own position, its accuracy and how old the fix is. <span class="mono">NO POS</span> means no fix or no permission; the app never shows an old position as current.</li>
+<li><b>Long-press</b> on the map moves the crosshair there. <b>POS</b> / <b>MY POS</b> centres on you and follows.</li>
+</ul>
+
+<h3>Light data</h3>
+<p>Tap the readout. All times are 24-hour in the phone's time zone.</p>
+<table>
+<tr><th>BMNT / EENT</th><td>Begin morning / end evening nautical twilight (sun 12° below the horizon)</td></tr>
+<tr><th>SR / SS</th><td>Sunrise / sunset</td></tr>
+<tr><th>MR / MS</th><td>Moonrise / moonset on that date. MS is often early morning (tonight's moonset is tomorrow's MS).</td></tr>
+<tr><th>MOON %</th><td>Illumination at 00:00 local</td></tr>
+<tr><th>NVG</th><td>Moon at least 30° high and at least 23% illuminated</td></tr>
+<tr><th>DARK</th><td>Longest stretch from EENT to BMNT with no moon up; NONE if there is none</td></tr>
+<tr><th>+1</th><td>The time is on the next day</td></tr>
+</table>
+<p>Same place, same date → same numbers as the ZULU watch face.</p>
+
+<h3>Offline maps</h3>
+<ul>
+<li>Open <b>OFFLINE</b> / <b>DL</b>, choose the zoom range and download the visible area. The tile count and size are shown before you start (limit 30,000 tiles per download — zoom in or lower the maximum zoom).</li>
+<li>Downloads continue only while the app is open. Paused or interrupted downloads can be resumed.</li>
+<li>The grid, readout, position and light data work with no signal. Areas you did not download will be blank or low-detail offline.</li>
+<li>GSI maps (with contour lines) cover Japan. OpenFreeMap covers the world, without contour lines for now.</li>
+</ul>
+
+<h3>Known limitations (v0.1)</h3>
+<ul>
+<li>No MGRS in the polar regions (north of 84°N / south of 80°S).</li>
+<li>No elevation, waypoints, red night mode or watch sync yet.</li>
+<li>Always carry a paper map and compass where safety depends on navigation.</li>
+</ul>
+
+<h3>Privacy</h3>
+<p>No account, no ads, no analytics, no tracking. Location stays on your device. <a href="privacy.html">Privacy policy</a>.</p>
+
+<h3>Not affiliated</h3>
+<p class="dim">ZULU Field is not affiliated with or endorsed by any military or government agency, or by Garmin. Map data: Geospatial Information Authority of Japan (GSI); © OpenFreeMap © OpenMapTiles © OpenStreetMap contributors.</p>
+</section>
+
+<section id="ja" lang="ja">
+<h2>日本語</h2>
+
+<h3>画面の読み方</h3>
+<ul>
+<li><b>上部の読み取り</b> — 照準の地点の MGRS 座標（例 <span class="mono">54S UE <b>88</b>43 <b>49</b>29</span>）。大きい数字が主数字で、地図の端に出る 88・49 の格子線に当たります。桁は腕時計・紙の地図と同じく切り捨てです。</li>
+<li><b>POS の行</b> — 現在地・精度・何秒前の測位か。<span class="mono">NO POS</span> は測位が無いか位置情報が許可されていない状態です。古い位置を今の位置として出すことはありません。</li>
+<li>地図を<b>長押し</b>すると照準がそこへ移ります。<b>POS</b> / <b>MY POS</b> で現在地に合わせて追従します。</li>
+</ul>
+
+<h3>光量データ</h3>
+<p>読み取りをタップします。時刻は 24 時間制・端末のタイムゾーンです。</p>
+<table>
+<tr><th>BMNT / EENT</th><td>航海薄明の開始 / 終了（太陽が地平線下 12°）</td></tr>
+<tr><th>SR / SS</th><td>日の出 / 日の入り</td></tr>
+<tr><th>MR / MS</th><td>その日の月の出 / 月の入り。MS は早朝のことが多い（今夜の月の入りは翌日の MS）</td></tr>
+<tr><th>MOON %</th><td>その日 0:00 の月の照度</td></tr>
+<tr><th>NVG</th><td>月の高度 30° 以上かつ照度 23% 以上の時間帯</td></tr>
+<tr><th>DARK</th><td>EENT〜BMNT のうち月が出ていない最長の区間。無ければ NONE</td></tr>
+<tr><th>+1</th><td>翌日の時刻</td></tr>
+</table>
+<p>同じ場所・同じ日なら、腕時計 ZULU と同じ数字が出ます。</p>
+
+<h3>オフライン地図</h3>
+<ul>
+<li><b>OFFLINE</b> / <b>DL</b> を開き、ズーム範囲を選んで表示中の範囲をダウンロードします。開始前に枚数と容量を表示します（1 回 30,000 枚まで。拡大するか最大ズームを下げてください）。</li>
+<li>ダウンロードはアプリを開いている間だけ進みます。中断したものは再開できます。</li>
+<li>格子・読み取り・現在地・光量データは圏外でも動きます。ダウンロードしていない範囲は、圏外では空白か粗い表示になります。</li>
+<li>地理院地図（等高線あり）は日本のみ。OpenFreeMap は世界をカバーしますが、今のところ等高線はありません。</li>
+</ul>
+
+<h3>既知の制限 (v0.1)</h3>
+<ul>
+<li>極域（北緯 84° 以北・南緯 80° 以南）では MGRS を表示しません。</li>
+<li>標高・ウェイポイント・赤色の夜間モード・腕時計との連携はまだありません。</li>
+<li>安全に関わる場面では、紙の地図とコンパスを必ず携行してください。</li>
+</ul>
+
+<h3>プライバシー</h3>
+<p>アカウント・広告・解析・トラッキングはありません。位置情報は端末の外に出ません。<a href="privacy.html">プライバシーポリシー</a></p>
+
+<h3>非提携</h3>
+<p class="dim">ZULU Field は、いかなる軍・政府機関とも、Garmin とも関係はなく、承認も受けていません。地図: 国土地理院 / © OpenFreeMap © OpenMapTiles © OpenStreetMap contributors。</p>
+</section>
+
+<footer>© 2026 EFG technologies Inc. · <a href="./">Home</a> · <a href="privacy.html">Privacy / プライバシー</a></footer>
+</main>
+</body>
+</html>
